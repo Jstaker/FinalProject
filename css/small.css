@@ -1,0 +1,78 @@
+@media only screen and (min-width: 250px) {
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #dfebed;
+    color: #2b4450;
+    margin: auto;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 0%;
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    color: #2b4450;
+}
+
+header {
+    background-color: #2b4450;
+    color: #dfebed;
+}
+
+nav {
+    background-color: #f78536;
+}
+
+a {
+    color: #2b4450;
+}
+
+
+
+
+
+
+
+
+/*classes and id's*/
+
+.nav-list {
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 15px;
+}
+
+.nav-links {
+    padding: 15px;
+}
+
+.active {
+    background-color: #dfebed;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.intro {
+    text-align: center;
+    width: 100%;
+}
+
+#banner {
+    height: 200px;
+    width: 350px;
+}
+
+
+
+
+}

@@ -4,28 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../FinalProject/css/small.css">
-    <link rel="stylesheet" href="../FinalProject/css/medium.css">
-    <link rel="stylesheet" href="../FinalProject/css/medium.css">
-    <link rel="stylesheet" href="../FinalProject/css/huge.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/huge.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <title>index</title>
 </head>
 
 
 <body>
-    <header class="index-head"></header>
+    <header class="index-head">
+        <h1>Idaho Falls Chamber of Commerce</h1>
+    </header>
     <nav>
-        <ul>
-            <li><a class="active" href="">Home</a>/li>
-            <li><a href="../FinalProject/html/city.html">City</a></li>
-            <li><a href="../FinalProject/html/directory.html">Directory</a></li>
-            <li><a href="../FinalProject/html/join.html">Join</a></li>
-            <li><a href="../FinalProject/html/contact.html">Contact Info</a></li>
+        <ul class="nav-list">
+            <li class="nav-links"><a class="active" href="">Home</a></li>
+            <li class="nav-links"><a href="../FinalProject/html/city.html">City</a></li>
+            <li class="nav-links"><a href="../FinalProject/html/directory.html">Directory</a></li>
+            <li class="nav-links"><a href="../FinalProject/html/join.html">Join</a></li>
+            <li class="nav-links"><a href="../FinalProject/html/contact.html">Contact Info</a></li>
         </ul>
     </nav>
 
     <main>
+        <div class="intro">
+           
+            <p class="intro-p">Welcome to the Idaho Falls Chamber of Commerce. Our purpose is to create a strong network of businesses within our community.
+            The Chamber of Commerce consists of hundreds of businesses in southeastern idaho. From small family owned businesses to large corporations, our 
+            organization conncets the community and strengthens the local economy.
+            </p>
+            <img id="banner" src="../media/perfect.jpeg" alt="greenbelt">
+        </div>
 
+        <div class="adverts">
+            <h2>Check out these Local Businesses!</h2>
+            <div class="advert-container">
+            <picture>
+                <img id="local-biz" src="../media/meuseum.jpeg" alt="biz-1">
+                <figcaption>Museum of Idaho</figcaption>
+            </picture>
+
+            <picture>
+                <img id="local-biz" src="../media/ijump.jpeg" alt="biz-2">
+                <figcaption>iJump</figcaption>
+            </picture>
+
+            <picture>
+                <img id="local-biz" src="../media/eicu.jpeg" alt="biz-3">
+                <figcaption>East Idaho Credit Union</figcaption>
+            </picture>
+            </div>
+        </div>
     </main>
 
     <footer class="index-footer"></footer>
