@@ -1,5 +1,22 @@
 @media only screen and (min-width: 600px) {
 
+
+    picture {
+        border-style: solid;
+        border-radius: 10px;
+    } 
+
+    picture :hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+
+
+
+
+
+/*classes and id's*/
+    
 .intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,15 +27,43 @@
     width: 100%;
 }
 
+.intro {
+    margin-bottom: 125px;
+    border-top: solid;
+}
+
 .intro-p {
     padding: 10px;
     font-size: 30px;
 }
 
-.advert-container {
-    display: grid;
-    grid-template-columns: 1fr 1 fr 1fr;
+.adverts {
+    text-align: center;
+    margin-bottom: 125px;
 }
+
+.advert-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#local-biz {
+    height: 310px;
+    width: 400px;
+}
+
+
+
+.contact-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    margin-bottom: 0px;
+    color: #dfebed;
+}
+
+
 
 
 }

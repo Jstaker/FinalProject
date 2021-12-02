@@ -6,6 +6,7 @@ body {
     color: #2b4450;
     margin: auto;
     width: 100%;
+    text-align: center;
 }
 
 h1 {
@@ -14,7 +15,7 @@ h1 {
     padding: 15px;
 }
 
-h2 {
+h2, h3 {
     text-align: center;
     color: #2b4450;
 }
@@ -31,6 +32,20 @@ nav {
 a {
     color: #2b4450;
 }
+
+
+footer {
+    background-color: #2b4450;
+    color: #dfebed;
+    padding: 10px;
+    margin: auto;
+}
+
+
+
+
+
+
 
 
 
@@ -52,6 +67,12 @@ a {
     padding: 15px;
 }
 
+.nav-list a:hover {
+    background-color: #dfebed;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 .nav-links {
     padding: 15px;
 }
@@ -70,6 +91,84 @@ a {
 #banner {
     height: 200px;
     width: 350px;
+}
+
+
+
+#local-biz {
+    height: 175px;
+    width: 275px;
+}
+
+
+.events { 
+    width: 50%;
+    margin: .5rem auto;
+	border:1px solid #bbb;
+    background-color: #2b4450;
+	display: flex;
+	flex-wrap: wrap;
+    margin-bottom: 75px;
+}
+
+.event-block {
+  display: flex;
+	flex-direction: row;
+}
+
+.event-block:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+#event {
+    border:1px solid #000080; 
+    width: 600px; 
+    height: 400px;
+}
+
+.data {
+    background-color: #dfebed; 
+    color: #2b4450;
+    font-size: 25px;
+    padding: 12px;
+}
+
+
+.action {
+    background-color: #f78536;
+    color: #2b4450;
+}
+
+.start {
+    margin-bottom: 2px;
+    color: #2b4450;
+}
+
+.join {
+    margin-top: 0px;
+    color: #2b4450;
+}
+
+.why-join {
+    margin-top: 2px;
+    font-size: 19px;
+}
+
+.social {
+    background-color: #497285;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    margin-bottom: 0px;
+    color: #dfebed;
+}
+
+#social-logo {
+    height: 45px;
+    width: 45px;
 }
 
 
