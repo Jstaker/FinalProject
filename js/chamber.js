@@ -16,3 +16,21 @@ var lastModifiedFormatted = day + ', ' +  month + " " + lastModified.getDate() +
 
 // Display copyright year and date last modified to footer of HTML document.
 document.getElementById("dateLastModified").textContent = lastModifiedFormatted;
+
+
+//weather API
+let idahoFallsID = "";
+const apiKey = "32da1ad47e5892254b0ea3b138b544bb";
+
+const path = "https://api.openweathermap.org/data/2.5/onecall?lat=43.48&lon=-112.03&exclude=hourly,daily&units=imperial&appid=32da1ad47e5892254b0ea3b138b544bb";
+
+fetch(path)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+    document.getElementById('current').textContent = Math.round(jsObject.current.temp);
+    document.getElementById('desc').textContent = jsObject.current.weather[0].description;
+    document.getElementById('humidity').textContent = Math.round(jsObject.current.humidity);
+    
+
+    });

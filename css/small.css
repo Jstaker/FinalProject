@@ -131,6 +131,7 @@ footer {
     color: #2b4450;
     font-size: 25px;
     padding: 12px;
+    padding-top: 55px;
 }
 
 
@@ -142,6 +143,8 @@ footer {
 .start {
     margin-bottom: 2px;
     color: #2b4450;
+    padding-top: 5px;
+    margin-top: auto;
 }
 
 .join {
@@ -169,6 +172,12 @@ footer {
 #social-logo {
     height: 45px;
     width: 45px;
+}
+
+
+.weather-container {
+    border-style: solid;
+    
 }
 
 
