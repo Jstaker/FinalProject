@@ -19,12 +19,13 @@
         <h1>Idaho Falls Chamber of Commerce</h1>
     </header>
     <nav>
+        <button onclick="toggleMenu()" class="nav-button">&#9776; Menu</button>
         <ul class="nav-list">
             <li class="nav-links"><a class="active" href="">Home</a></li>
             <li class="nav-links"><a href="html/city.html">City</a></li>
             <li class="nav-links"><a href="html/directory.html">Directory</a></li>
             <li class="nav-links"><a href="html/join.html">Join</a></li>
-            <li class="nav-links"><a href="html/contact.html">Contact Info</a></li>
+            <li class="nav-links"><a href="html/contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -61,8 +62,9 @@
         </div>
 
 
+        <div class="event-container">
         <section class="events">
-            <h2 style="color: #dfebed; font-size: 28px;">Upcoming Events</h2>
+            <h2 style="font-size: 28px;">Upcoming Events</h2>
             <article class="event-block">
                 <img src="media/parade.jpg" alt="parade" id="event">
                 <div class="data">On December 15th there will be Christmas
@@ -84,7 +86,7 @@
                 </div>
             </article>
             <article class="event-block">
-                <img src="media/newyear.jpeg" alt="New Years Party" id="event">
+                <img src="media/newyear.jpeg" alt="New Years Party" id="new-family">
                 <div class="data">
                     Help us bring in the new year by celebrating 2022 with us at
                     the Civic Auditorium. There will be several live performaces by
@@ -94,6 +96,7 @@
             </article>
 
         </section>
+    </div>
 
         <div class="weather-container">
         <h2 style="font-size: 20px; color: #2b4450;">Current Weather in Idaho Falls</h2>

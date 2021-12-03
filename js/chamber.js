@@ -1,3 +1,10 @@
+//menu buttom on small view
+function toggleMenu() {
+    document.getElementsByClassName("nav-list")[0].classList.toggle("responsive");
+}
+
+
+
 //display last updated
 var weekday = new Array(
     "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
