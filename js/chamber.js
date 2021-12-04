@@ -26,7 +26,6 @@ document.getElementById("dateLastModified").textContent = lastModifiedFormatted;
 
 
 //weather API
-let idahoFallsID = "";
 const apiKey = "32da1ad47e5892254b0ea3b138b544bb";
 
 const path = "https://api.openweathermap.org/data/2.5/onecall?lat=43.48&lon=-112.03&exclude=hourly,daily&units=imperial&appid=32da1ad47e5892254b0ea3b138b544bb";
@@ -41,3 +40,36 @@ fetch(path)
     
 
     });
+
+//Business Directory JSON fetch
+fetch("directory.json")
+.then(function (response){
+    return response.json();
+})
+
+.then(function(jsonObject){
+    const biz = jsonObject['biz'];
+    for (let i=0; i < biz.length; i++){
+        let bizInfo = document.createElement('div');
+        let card = document.createElement('section');
+        let name = document.createElement('h3');
+        let image = document.createElement('img');
+        let category = document.createElement('p');
+        let year_founded = document.createElement('p');
+//////////////////////////////////////////////////////////////
+        name.textContent = biz[i].name;
+        category.textContent = biz[i].category;
+        year_founded.textContent = `Year Founded: ${biz[i].year_founded}`;
+        image.setAttribute("src", biz[i].image);
+        image.setAttribute("alt", "Picture of Business");
+        card.setAttribute("class", "card"); 
+///////////////////////////////////////////////////////////////
+        card.appendChild(bizInfo);
+        card.appendChild(name);
+        card.appendChild(image);
+        card.appendChild(category);
+        card.appendChild(year_founded);
+///////////////////////////////////////////////////////////////
+        document.querySelector("#cards").appendChild(card);                       
+    }
+})

@@ -1,0 +1,56 @@
+{
+    "directory": [
+        
+
+
+        {
+            "name": "Chesbro",
+            "image": "../media/chesbro.png",
+            "category": "Music Store",
+            "year_founded": "1911"
+        },
+
+        {
+            "name": "Idaho Mountain Trading",
+            "image": "../media/mtn-trade.jpeg",
+            "category": "Outdoors/Sport Store",
+            "year_founded": "1977"
+
+        },
+
+        {
+            "name": "Snake Bite Restaurant",
+            "image": "../media/snake-bite.jpeg",
+            "category": "Restaurant",
+            "year_founded": "1994"
+        },
+
+        {
+            "name": "Melaleuca",
+            "image": "#",
+            "category": "Wellness Company",
+            "year_founded": "1985"
+        },
+
+        {
+            "name": "Family First Medical",
+            "image": "#",
+            "category": "Medical Center",
+            "year_founded": "2002"
+        },
+
+        {
+            "name": "Idaho Falls Chukars",
+            "image": "#",
+            "category": "Minor League Baseball Team",
+            "year_founded": "1940"
+        },
+
+        {
+            "name": "Pinecrest Golf Course",
+            "image": "#",
+            "category": "Golf Course",
+            "year_founded": "1938"
+        }
+    ]
+}
