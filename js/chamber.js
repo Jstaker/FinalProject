@@ -43,33 +43,33 @@ fetch(path)
 
 //Business Directory JSON fetch
 fetch("directory.json")
-.then(function (response){
-    return response.json();
-})
+    .then(function (response){
+        return response.json();
+    })
 
-.then(function(jsonObject){
-    const biz = jsonObject['biz'];
-    for (let i=0; i < biz.length; i++){
-        let bizInfo = document.createElement('div');
-        let card = document.createElement('section');
-        let name = document.createElement('h3');
-        let image = document.createElement('img');
-        let category = document.createElement('p');
-        let year_founded = document.createElement('p');
-//////////////////////////////////////////////////////////////
-        name.textContent = biz[i].name;
-        category.textContent = biz[i].category;
-        year_founded.textContent = `Year Founded: ${biz[i].year_founded}`;
-        image.setAttribute("src", biz[i].image);
-        image.setAttribute("alt", "Picture of Business");
-        card.setAttribute("class", "card"); 
-///////////////////////////////////////////////////////////////
-        card.appendChild(bizInfo);
-        card.appendChild(name);
-        card.appendChild(image);
-        card.appendChild(category);
-        card.appendChild(year_founded);
-///////////////////////////////////////////////////////////////
-        document.querySelector("#cards").appendChild(card);                       
-    }
-})
+    .then(function (jsonObject){
+        const direct = jsonObject['direct'];
+        for (let i =0; i < direct.length; i++){
+            let directInfo = document.createElement('div');
+            let card = document.createElement('section');
+            let name = document.createElement('h3');
+            let image = document.createElement('img');
+            let category = document.createElement('p');
+            let year_founded = document.createElement('p');
+///////////////////////////////////////////////////////////////////////
+            name.textContent = direct[i].name;
+            category.textContent = direct[i].category;
+            image.setAttribute("src", direct[i].image);
+            image.setAttribute("alt", "picture of business");
+            card.setAttribute("class", "card");
+///////////////////////////////////////////////////////////////////////
+
+            card.appendChild(directInfo);
+            card.appendChild(name);
+            card.appendChild(image);
+            card.appendChild(category);
+            card.appendChild(year_founded);
+///////////////////////////////////////////////////////////////////////
+            document.querySelector("#cards").appendChild(card);
+        }
+    })
