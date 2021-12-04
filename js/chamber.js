@@ -42,7 +42,7 @@ fetch(path)
     });
 
 //Business Directory JSON fetch
-fetch("js/directory.json")
+fetch("../js/directory.json")
     .then(function (response){
         return response.json();
     })
