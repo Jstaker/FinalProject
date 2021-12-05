@@ -15,15 +15,12 @@
         padding: 15px;
     }
     
-    h2 {
+    h2, h3 {
         text-align: center;
         color: #2b4450;
     }
 
-    h3 {
-        color: #dfebed;
-        text-align: center;
-    }
+   
     
     header {
         background-color: #2b4450;
@@ -60,6 +57,45 @@
         color: #dfebed;
         padding: 10px;
         margin: auto;
+    }
+
+
+    form {
+        background-color: #2b4450;
+        padding: 10px;
+        color: #dfebed;
+        width: 75%;
+        text-align: center;
+        font-size: 15pt;
+         border-radius: 10px;
+         margin-left: 13%;
+         margin-right: 15%;
+         margin-bottom: 70px;
+    }
+
+    
+
+    legend {
+        padding: 15px;
+    }
+
+    fieldset {
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    span {
+        padding: 5px;
+    }
+
+    
+
+    figcaption {
+        color: #2b4450;
+        background-color: #dfebed;
+        width: 425px;
+        height: 25px;
     }
 
 
@@ -104,22 +140,13 @@
     padding: 5px;
 }
 
-
-
-
-  .card {
-    display: block;
-    color: #dfebed;
-    background-color: #2b4450;
-    text-align: center;
-    width: 200px; 
-    border-radius: 10px;
+.info {
+    padding: 15px;
 }
 
-#cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
-}
+
+
+
+  
 
 }

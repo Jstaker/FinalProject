@@ -48,27 +48,33 @@ fetch("../js/directory.json")
     })
 
     .then(function (jsonObject){
-        const direct = jsonObject['direct'];
-        for (let i =0; i < direct.length; i++){
-            let directInfo = document.createElement('div');
+        const directory = jsonObject['directory'];
+        for (let i =0; i < directory.length; i++){
+            let directoryInfo = document.createElement('div');
             let card = document.createElement('section');
             let name = document.createElement('h3');
             let image = document.createElement('img');
             let category = document.createElement('p');
-            let year_founded = document.createElement('p');
+            let yearFounded = document.createElement('p');
+            let link = document.createElement('a');
 ///////////////////////////////////////////////////////////////////////
-            name.textContent = direct[i].name;
-            category.textContent = direct[i].category;
-            image.setAttribute("src", direct[i].image);
+            name.textContent = directory[i].name;
+            category.textContent = directory[i].category;
+            yearFounded.textContent = `Year Founded: ${directory[i].yearFounded}`;
+            link.textContent = "Click here to visit their site";
+            image.setAttribute("src", directory[i].image);
             image.setAttribute("alt", "picture of business");
             card.setAttribute("class", "card");
+            link.setAttribute("href", directory[i].link);
+            link.setAttribute("style", "color: #dfebed;")
 ///////////////////////////////////////////////////////////////////////
 
-            card.appendChild(directInfo);
+            card.appendChild(directoryInfo);
             card.appendChild(name);
             card.appendChild(image);
             card.appendChild(category);
-            card.appendChild(year_founded);
+            card.appendChild(yearFounded);
+            card.appendChild(link);
 ///////////////////////////////////////////////////////////////////////
             document.querySelector("#cards").appendChild(card);
         }
